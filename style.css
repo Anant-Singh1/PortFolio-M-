@@ -16,8 +16,8 @@
     --btnColor: black;
     --autoTypeColor: #4d4d4d;
 
-    --ovelayColor: linear-gradient(rgba(0, 0, 0, 0.5), #616767d5);
-
+    --ovelayColor: linear-gradient(rgba(0, 0, 0, 0.5), #262c2cd5);
+    --overlayTextColor: #fff;
 }
 
 
@@ -395,6 +395,7 @@ nav ul li a {
     cursor: pointer;
     opacity: 0;
     transition: 1s;
+    text-align: center;
 }
 
 .post:hover .overlay {
@@ -402,16 +403,18 @@ nav ul li a {
 }
 
 .desc {
-    width: 80%;
+    width: 70%;
     position: absolute;
     bottom: 0;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: 1s;
+    text-decoration: var(--overlayTextColor);
+    text-align: center;
 }
 
-hr {
+.desc hr {
     background: #fff;
     height: 2px;
     border: 0;
@@ -421,6 +424,12 @@ hr {
 
 .desc p {
     font-size: 14px;
+    color: #fff;
+}
+
+.desc h3 {
+    font-size: 14px;
+    color: #fff;
 }
 
 .post:hover .desc {
