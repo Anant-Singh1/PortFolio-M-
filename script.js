@@ -1,9 +1,11 @@
 let themeDots = document.getElementsByClassName('theme-dot');
 let theme = localStorage.getItem('theme');
+
+
 if (theme == null) {
-    setTheme('light')
+    setTheme('light');
 } else {
-    setTheme(theme)
+    setTheme(theme);
 }
 for (var i = 0; themeDots.length > i; i++) {
     themeDots[i].addEventListener('click', function () {
@@ -26,3 +28,20 @@ function setTheme(mode) {
 
     localStorage.setItem('theme', mode)
 }
+
+
+let menuBtn = document.getElementById('menuBtn');
+let sideNavbar = document.getElementById('sideNavbar');
+let menu = document.getElementById('menu');
+
+sideNavbar.style.right = "-250px";
+menuBtn.onclick = () => {
+    if (sideNavbar.style.right === "-250px") {
+        sideNavbar.style.right = "0";
+        menu.src = './img/close.png'
+    }
+    else {
+        sideNavbar.style.right = "-250px";
+        menu.src = './img/menu.png'
+    }
+}   

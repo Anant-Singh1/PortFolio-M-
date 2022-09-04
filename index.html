@@ -14,24 +14,22 @@
 </head>
 
 <body>
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
 
-        <div class="nav-btn">
-            <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+    <!-- Navigation Section -->
 
-        </div>
+    <div id="sideNavbar">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="img/menu.png" id="menu">
     </div>
 
     <section class="s1" id="home">
@@ -47,11 +45,6 @@
                         <div class="browser-dot" id="dot-2"></div>
                         <div class="browser-dot" id="dot-3"></div>
                     </div>
-
-                    <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
-                        <!-- <li><a href="#">Contact</a></li> -->
-                    </ul>
                 </div>
                 <div class="left-column">
                     <img src="./img/IMG-20200112-WA0006.jpg" id="profile_pic" alt="">
@@ -136,10 +129,13 @@
 
                     <div class="post">
                         <img class="thumbnail" src="./img/Chat-App.jpg" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Multiple Chat App</h6>
-                            <p class="post-intro">This is a sentence.Some more text here</p>
-                            <a href="#" target="_blank">View On Github</a>
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h3>Chat-App</h3>
+                            <hr>
+                            <p>This chat app is created using NodeJs and React. <br>
+                                View on Github.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -147,22 +143,28 @@
                 <div>
                     <div class="post">
                         <img class="thumbnail" src="./img/Todo-App.jpg" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Todo-App</h6>
-                            <p class="post-intro">This app is created using React</p>
-                            <a href="https://github.com/Anant-Singh1/todo-app-main" target="_blank">View On Github</a>
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h3>Todo-App</h3>
+                            <hr>
+                            <p>This app is created using React and other react hooks. <br>
+                                View on Github.
+                            </p>
                         </div>
+
                     </div>
                 </div>
 
                 <div>
                     <div class="post">
                         <img class="thumbnail" src="./img/calculator.jpg" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Calculator</h6>
-                            <p class="post-intro">This is my first project created using Html,Css and JS</p>
-                            <a href="https://github.com/Anant-Singh1/Calculator_Dark_Light" target="_blank">View On
-                                Github</a>
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h3>Calculator</h3>
+                            <hr>
+                            <p>This is a simple calcultor created using HTML,CSS and JS <br>
+                                View on Github.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -170,11 +172,13 @@
                 <div>
                     <div class="post">
                         <img class="thumbnail" src="./img/Notes.jpg" alt="">
-                        <div class="post-preview">
-                            <h6 class="post-title">Notes-App</h6>
-                            <p class="post-intro">This app is also created using React and also has local storage</p>
-                            <a href="https://github.com/Anant-Singh1/note-app" target="_blank">View On
-                                Github</a>
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h3>Note-App</h3>
+                            <hr>
+                            <p>This Note app is created using React and React Hooks. <br>
+                                View on Github.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -207,21 +211,17 @@
             </form>
         </div>
     </section>
+
     <script src="script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-type", {
-            strings: ["Anant Singh"],
+            strings: ["Anant Singh", "a Developer"],
             typeSpeed: 150,
             backSpeed: 150,
             loop: true
         })
-    </script>
-    </script>
-    <script>
-            ('.navbar-nav>li>a').on('click', function () {
-                ('.navbar-collapse').collapse('hide');
-            });
     </script>
 </body>
 
