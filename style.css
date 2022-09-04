@@ -18,6 +18,7 @@
 
     --ovelayColor: linear-gradient(rgba(0, 0, 0, 0.5), #262c2cd5);
     --overlayTextColor: #fff;
+    --progressColor: #4b5156;
 }
 
 
@@ -435,6 +436,29 @@ nav ul li a {
 .post:hover .desc {
     bottom: 40%;
     opacity: 1;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 200px;
+    height: 1em;
+    background: #fff;
+    border-radius: 1.5em;
+    position: relative;
+}
+
+.progress-bar::before {
+    /* display: flex;
+    position: absolute; */
+    /* left: .5em;
+    top: .5em;
+    bottom: .5em; */
+    width: calc(var(--width, 0)*1%);
+    min-width: 0.5rem;
+    max-width: calc(100%-0.5em);
+    background-color: #17a2b8;
+    border-radius: 1em;
+    padding: 1em;
 }
 
 @media screen and (max-width:1200px) {
