@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="logo/AS.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>PortFolio</title>
 </head>
@@ -25,6 +28,13 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#project">Project</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <div class="theme-options-wrapper">
+                    <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                    <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+                    <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                    <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                </div>
+
             </ul>
         </nav>
     </div>
@@ -47,20 +57,33 @@
                     </div>
                 </div>
                 <div class="left-column">
-                    <img src="./img/IMG-20200112-WA0006.jpg" id="profile_pic" alt="">
-                    <h5 style="text-align:center;line-height:0">Personalize Theme</h5>
-                    <div class="theme-options-wrapper">
-                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
-                        <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
-                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
-                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/IMG-20200112-WA0006.jpg" alt="profile-card">
+                            </div>
+                            <ul class="social-icons">
+
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                                <li><a href=""><i class="fa-solid fa-code"></i></a></li>
+                                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="details">
+                                <h2>Anant Singh
+                                    <br>
+                                    <span class="card-title">
+                                        Web Developer
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                     </div>
-                    <p id="settings-note">Theme setting will be saved for<br>your next visit </p>
                 </div>
                 <div class="right-column">
                     <div id="preview-shadow">
                         <div id="preview">
-                            <h3>What do I do</h3>
+                            <h3>Who am I ?</h3>
                             <p>I am a student who is currently studying in collage
                                 and learning web dev
                             </p>

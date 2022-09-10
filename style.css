@@ -160,6 +160,7 @@ nav ul li a {
 
 .main-container {
     width: 1200px;
+    height: max-content;
     margin: 0 auto;
 }
 
@@ -175,6 +176,7 @@ nav ul li a {
 }
 
 .intro-wrapper {
+    height: 500px;
     background-color: var(--secondaryColor);
     border-radius: 5px 5px 0 0;
     border: 1px solid var(--borderColor);
@@ -191,6 +193,7 @@ nav ul li a {
 }
 
 .nav-wrapper {
+    height: 50px;
     grid-area: nav-wrapper;
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid var(--borderColor);
@@ -248,22 +251,54 @@ nav ul li a {
 
 .left-column {
     grid-area: left-column;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 140px;
+    padding-bottom: 90px;
 }
 
-#profile_pic {
-    display: block;
-    margin: 0 auto;
-    height: 200px;
-    width: 200px;
-    object-fit: cover;
-    border: 2px solid var(--borderColor);
+.card-wrapper {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 350px;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    /* background: #000; */
+    transition: 0.5s;
+}
+
+.card .card-image img {
+    width: 261px;
+    height: 351px;
+}
+
+@media screen and (max-width:800px) {
+    .intro-wrapper {
+        height: 720px;
+    }
+
 }
 
 .theme-options-wrapper {
     display: flex;
-    justify-content: center;
+
 }
 
 .theme-dot {
