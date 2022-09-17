@@ -1,21 +1,20 @@
 :root {
-    --mainColor: #46344E;
-    --secondaryColor: #382a3f;
+  --mainColor: #46344e;
+  --secondaryColor: #382a3f;
 
-    --borderColor: #1d1520;
+  --borderColor: #1d1520;
 
-    --mainText: #fff;
-    --secondaryText: #eeeeee;
+  --mainText: #fff;
+  --secondaryText: #eeeeee;
 
-    --themeDotBorder: #FFF;
+  --themeDotBorder: #fff;
 
-    --previewBg: rgb(29, 21, 32, 0.8);
-    --previewShadow: #2b202f;
+  --previewBg: rgb(29, 21, 32, 0.8);
+  --previewShadow: #2b202f;
 
-    --navColor: #281c2d;
-    --buttonColor: #8534a3;
-    --autoTypeColor: #8fbc8fab;
-    --ovelayColor: linear-gradient(rgba(0, 0, 0, 0.5), #44214bd5);
-
-
+  --navColor: #281c2d;
+  --buttonColor: #8534a3;
+  --autoTypeColor: #8fbc8fab;
+  --ovelayColor: linear-gradient(rgba(0, 0, 0, 0.5), #44214bd5);
+  --socialColor: var(--buttonColor);
 }
