@@ -251,9 +251,9 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 260px;
+  width: 290px;
   height: 350px;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   overflow: hidden;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -273,8 +273,8 @@ nav ul li a {
 }
 
 .card .card-image img {
-  width: 261px;
-  height: 351px;
+  width: 290px;
+  height: 350px;
 }
 .card:hover img {
   opacity: 0.4;
