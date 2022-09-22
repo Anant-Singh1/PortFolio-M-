@@ -129,7 +129,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: #fff;
 }
 
 #menuBtn {
@@ -190,21 +190,6 @@ nav ul li a {
   justify-content: space-between;
   align-items: center;
   background: var(--mainColor);
-}
-
-#navigation a {
-  color: var(--mainColor);
-}
-
-#navigation {
-  margin: 0;
-  padding: 10px;
-}
-
-#navigation li {
-  display: inline-block;
-  margin-right: 5px;
-  margin-left: 5px;
 }
 
 .dots-wrapper {
